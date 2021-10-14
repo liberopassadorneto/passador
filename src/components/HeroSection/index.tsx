@@ -39,7 +39,7 @@ export function HeroSection() {
         >
           <Box textAlign={['center', 'left']}>
             <Text color='green' fontWeight='normal' fontSize={['sm', 'md']}>
-              Intelligent Manufacturing
+              Montagem Industrial e Calderaria
             </Text>
             <Heading
               mt={8}
@@ -50,7 +50,7 @@ export function HeroSection() {
               w={['auto', '340px', '480px', '380px', '580px']}
               px={['8', '0']}
             >
-              Process technologies, equipment, plants, and systems
+              Manufatura, calderaria, manutenção e corte com jato de água
             </Heading>
             <Text
               mt={6}
@@ -60,8 +60,9 @@ export function HeroSection() {
               px={['6', '0']}
               fontSize={['sm', 'sm', 'md', 'md', 'md']}
             >
-              With technology, service solutions and customized solutions are
-              the key to success. With technology.
+              A empresa é capacitada pela norma N-134 para desenvolver
+              aplicações nas atividades de Montagem Industrial, Calderaria e
+              Manutenções.
             </Text>
             <Link href='#' passHref style={{ textDecoration: 'none' }}>
               <Button
@@ -76,12 +77,12 @@ export function HeroSection() {
                 py={7}
                 _hover={{ bg: 'primaryHover' }}
               >
-                GET TO KNOW
+                SAIBA MAIS
               </Button>
             </Link>
           </Box>
           {isWideVersion && (
-            <Box w={['340px', '340px', '340px', '440px', '640px']}>
+            <Box w={['340px', '340px', '240px', '340px', '540px']}>
               <RocketSVG />
             </Box>
           )}

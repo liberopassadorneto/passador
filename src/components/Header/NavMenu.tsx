@@ -8,12 +8,12 @@ export function NavMenu() {
     <>
       <Stack spacing={12} direction={['column', 'column', 'column', 'row']}>
         <NavItem title='Home' />
-        <NavItem title='Our Services' />
+        <NavItem title='Clientes' />
         <NavItem title='Showcase' />
         <NavItem title='About us' />
       </Stack>
 
-      <ButtonCTA label='Get Started' />
+      <ButtonCTA label='Entrar em contato' />
     </>
   );
 }
