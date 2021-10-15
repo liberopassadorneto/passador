@@ -27,7 +27,7 @@ export function HeroSection() {
     >
       <Flex
         mt={['16', '16', '16', '16', '20']}
-        mb={['16', '16', '16', '10', '10']}
+        mb={['16', '16', '16', '10', '20']}
       >
         <SimpleGrid
           flex='1'
@@ -56,13 +56,16 @@ export function HeroSection() {
               mt={6}
               color='gray'
               fontWeight='medium'
-              w={['auto', '340px', '480px', '340px', '480px']}
+              w={['auto', '340px', '480px', '340px', '460px']}
               px={['6', '0']}
               fontSize={['sm', 'sm', 'md', 'md', 'md']}
             >
-              A empresa é capacitada pela norma N-134 para desenvolver
-              aplicações nas atividades de Montagem Industrial, Calderaria e
-              Manutenções.
+              A{' '}
+              <Text as='span' color='primary' textTransform='uppercase'>
+                Passador
+              </Text>{' '}
+              é capacitada pela norma N-134 para desenvolver aplicações nas
+              atividades de Montagem Industrial, Calderaria e Manutenções.
             </Text>
             <Link href='#' passHref style={{ textDecoration: 'none' }}>
               <Button
