@@ -8,7 +8,7 @@ type CustomerItemProps = {
 export function CustomerItem({ title }: CustomerItemProps) {
   return (
     <Image
-      w={['125px', '150px', '150px', '150px']}
+      w={['125px', '125px', '125px', '150px']}
       src={`../assets/svg/${title}.svg`}
       alt={title}
     />

@@ -3,13 +3,13 @@ import {
   Button,
   Flex,
   Heading,
+  Image,
   Link,
   SimpleGrid,
   Text,
-  useBreakpointValue
+  useBreakpointValue,
 } from '@chakra-ui/react';
 import React from 'react';
-import { RocketSVG } from './RocketSVG';
 
 export function HeroSection() {
   const isWideVersion = useBreakpointValue({
@@ -52,7 +52,7 @@ export function HeroSection() {
               w={['auto', '340px', '480px', '380px', '580px']}
               px={['8', '0']}
             >
-              Manufatura, calderaria, manutenção e corte com jato de água
+              Manufatura, calderaria, manutenção e corte plasma CNC
             </Heading>
             <Text
               mt={6}
@@ -87,8 +87,8 @@ export function HeroSection() {
             </Link>
           </Box>
           {isWideVersion && (
-            <Box w={['340px', '340px', '240px', '340px', '540px']}>
-              <RocketSVG />
+            <Box w={['340px', '340px', '240px', '440px', '540px']}>
+              <Image src='./assets/svg/to_the_stars.svg' alt='rocket' />
             </Box>
           )}
         </SimpleGrid>

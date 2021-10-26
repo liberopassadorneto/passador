@@ -33,10 +33,10 @@ export const featureData = [
     id: '04',
     dividerId: 'd04',
     subtitle: 'Montagem e Manutenção',
-    title: 'Montagem Especiais + Manutenção',
+    title: 'Montagem Especiais e Manutenção',
     description:
       'Nossa equipe realiza manutenção em estruturas e manutenção em qualquer tipo de estrutura de acordo com o projeto.',
-    icon: 'completed_tasks',
+    icon: 'rocket',
     isRight: false,
   },
 ];

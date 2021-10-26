@@ -15,14 +15,13 @@ export function CustomersSection() {
     >
       <Box w='100%' maxW={1480} mx='auto'>
         <Flex direction='column'>
-          <Box px={['6', '0', '0', '0']}>
+          <Box w={['75%', '75%', '50%', '75%', '100%']} mx='auto'>
             <Heading
               title={'Empresas parceiras da Passador'}
               subtitle={'Nós trabalhamos com as melhores empresas'}
               subtitleColor={'green'}
             />
           </Box>
-
           <CustomerItems />
         </Flex>
       </Box>
