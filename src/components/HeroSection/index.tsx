@@ -69,7 +69,7 @@ export function HeroSection() {
               é capacitada pela norma N-134 para desenvolver aplicações nas
               atividades de Montagem Industrial, Calderaria e Manutenções.
             </Text>
-            <Link href='#' style={{ textDecoration: 'none' }}>
+            <Link href='tel:1837223636' style={{ textDecoration: 'none' }}>
               <Button
                 as='a'
                 fontSize={['sm', 'md']}

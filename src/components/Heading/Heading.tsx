@@ -23,14 +23,14 @@ export function Heading({
       textAlign='center'
     >
       <ChakraHeading
-        maxW={['420px', '420px', '480px', '820px']}
+        maxW={['320px', '420px', '480px', '820px']}
         color='gray'
         fontSize={['3xl', '3xl', '4xl', '5xl']}
       >
         {title}
       </ChakraHeading>
       <Text
-        maxW={['420px', '420px', '480px', '620px']}
+        maxW={['320px', '420px', '480px', '620px']}
         color={subtitleColor}
         fontSize={['sm', 'sm', 'sm', 'md']}
         px={['6', '6', '0', '0']}
