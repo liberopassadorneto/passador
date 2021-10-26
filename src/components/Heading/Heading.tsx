@@ -15,7 +15,6 @@ export function Heading({
   return (
     <Stack
       w='100%'
-      maxW={620}
       mx='auto'
       mb='10'
       spacing={4}
@@ -23,7 +22,11 @@ export function Heading({
       justify='center'
       textAlign='center'
     >
-      <ChakraHeading color='gray' fontSize={['3xl', '3xl', '4xl', '5xl']}>
+      <ChakraHeading
+        maxW={['420px', '420px', '480px', '820px']}
+        color='gray'
+        fontSize={['3xl', '3xl', '4xl', '5xl']}
+      >
         {title}
       </ChakraHeading>
       <Text

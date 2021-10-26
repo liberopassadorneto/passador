@@ -4,6 +4,7 @@ import { CustomersSection } from '../components/CustomersSection';
 import { FeaturesSection } from '../components/FeaturesSection';
 import { Header } from '../components/Header';
 import { HeroSection } from '../components/HeroSection';
+import { SquadSection } from '../components/SquadSection';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <HeroSection />
       <FeaturesSection />
       <CustomersSection />
+      <SquadSection />
     </Flex>
   );
 }
