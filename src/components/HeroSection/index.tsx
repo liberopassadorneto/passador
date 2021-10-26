@@ -24,10 +24,12 @@ export function HeroSection() {
       p={['0', '2']}
       px={['0', '0', '20', '8', '28']}
       bgGradient='linear(to-tr, shape, background)'
+      borderBottomWidth={1}
+      borderColor='borders'
     >
       <Flex
-        mt={['16', '16', '16', '16', '20']}
-        mb={['16', '16', '16', '10', '20']}
+        mt={['16', '16', '16', '16', '28']}
+        mb={['16', '16', '16', '10', '28']}
       >
         <SimpleGrid
           flex='1'

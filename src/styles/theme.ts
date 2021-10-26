@@ -42,8 +42,6 @@ export const theme = extendTheme({
     black: '#09090a',
     white: '#ffffff',
     scrollbar: '#4d4d57',
-    // menuMobile: '#09090a',
-
     // highlight a background color for highlighting text
   },
   fonts: {

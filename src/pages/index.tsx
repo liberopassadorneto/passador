@@ -1,5 +1,6 @@
 import { Flex } from '@chakra-ui/react';
 import React from 'react';
+import { CustomersSection } from '../components/CustomersSection';
 import { FeaturesSection } from '../components/FeaturesSection';
 import { Header } from '../components/Header';
 import { HeroSection } from '../components/HeroSection';
@@ -10,6 +11,7 @@ export default function Home() {
       <Header />
       <HeroSection />
       <FeaturesSection />
+      <CustomersSection />
     </Flex>
   );
 }
