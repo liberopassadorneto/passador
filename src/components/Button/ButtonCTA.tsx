@@ -12,7 +12,7 @@ interface ButtonCTAProps extends ChakraButtonProps {
 
 export function ButtonCTA({ label, icon, ...rest }: ButtonCTAProps) {
   return (
-    <Link href='#' passHref style={{ textDecoration: 'none' }}>
+    <Link href='#' style={{ textDecoration: 'none' }}>
       <ChakraButton
         rightIcon={icon}
         as='a'

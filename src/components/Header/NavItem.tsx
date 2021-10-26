@@ -9,7 +9,6 @@ export function NavItem({ title }: NavItemProps) {
   return (
     <Link
       href='#'
-      passHref
       color='gray'
       _hover={{ color: 'white' }}
       style={{ textDecoration: 'none' }}

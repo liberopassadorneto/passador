@@ -6,7 +6,7 @@ import {
   Link,
   SimpleGrid,
   Text,
-  useBreakpointValue,
+  useBreakpointValue
 } from '@chakra-ui/react';
 import React from 'react';
 import { RocketSVG } from './RocketSVG';
@@ -69,7 +69,7 @@ export function HeroSection() {
               é capacitada pela norma N-134 para desenvolver aplicações nas
               atividades de Montagem Industrial, Calderaria e Manutenções.
             </Text>
-            <Link href='#' passHref style={{ textDecoration: 'none' }}>
+            <Link href='#' style={{ textDecoration: 'none' }}>
               <Button
                 as='a'
                 fontSize={['sm', 'md']}

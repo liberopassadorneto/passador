@@ -2,6 +2,7 @@ import { Box, Heading as ChakraHeading, Stack, Text } from '@chakra-ui/react';
 import React from 'react';
 
 interface FeatureItemProps {
+  id?: string;
   subtitle: string;
   title: string;
   description: string;
