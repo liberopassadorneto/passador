@@ -1,6 +1,7 @@
 export const featureData = [
   {
     id: '01',
+    dividerId: 'd01',
     subtitle: 'Norma N-134 Petrobás',
     title: 'Chumbador N-134 Petrobás',
     description:
@@ -10,6 +11,7 @@ export const featureData = [
   },
   {
     id: '02',
+    dividerId: 'd02',
     subtitle: 'Montagem Industrial',
     title: 'Construção Civil',
     description:
@@ -19,6 +21,7 @@ export const featureData = [
   },
   {
     id: '03',
+    dividerId: 'd03',
     subtitle: 'Fabricação de Estruturas',
     title: 'Suporte para Estruturas/Tubulação',
     description:
@@ -28,6 +31,7 @@ export const featureData = [
   },
   {
     id: '04',
+    dividerId: 'd04',
     subtitle: 'Montagem e Manutenção',
     title: 'Montagem Especiais + Manutenção',
     description:
