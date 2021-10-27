@@ -5,7 +5,7 @@ import { FeaturesItems } from './FeaturesItems';
 
 export function FeaturesSection() {
   return (
-    <Box w='100%' maxW={1480} mx='auto' py={['20', '20', '20', '28']}>
+    <Box w='100%' maxW={1440} mx='auto' py={['20', '20', '20', '28']}>
       <Flex direction='column'>
         <Heading
           title={'Montagem Industrial'}

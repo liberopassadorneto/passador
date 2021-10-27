@@ -1,40 +1,36 @@
-import { Box, Heading as ChakraHeading, Stack, Text } from '@chakra-ui/react';
+import {
+  Box,
+  Heading as ChakraHeading,
+  Text,
+  useBreakpointValue,
+} from '@chakra-ui/react';
 import React from 'react';
 
-interface FeatureItemProps {
+type FeatureItemProps = {
   id?: string;
-  subtitle: string;
   title: string;
+  subtitle: string;
   description: string;
   icon: string;
-  isRight: boolean;
-}
+  isRight?: boolean;
+};
 
 export function FeaturesItem({
-  subtitle,
   title,
+  subtitle,
   description,
   icon,
-  isRight,
+  isRight = true,
 }: FeatureItemProps) {
+  const isWideVersion = useBreakpointValue({
+    base: false,
+    lg: true,
+  });
   return (
-    <Stack
-      direction={['column', 'row', 'row', 'row']}
-      w='100%'
-      px={['6', '6', '6', '0', '0']}
-      align='center'
-      justify={[
-        'space-between',
-        'space-evenly',
-        'space-evenly',
-        'space-evenly',
-        'space-evenly',
-      ]}
-      textAlign={['center', 'inherit', 'inherit', 'inherit']}
-    >
-      {!isRight && (
+    <>
+      {!isRight && isWideVersion && (
         <Box w={['220px', '400px', '300px', '440px']}>
-          <img src={`../assets/svg/${icon}.svg`} alt={title}></img>
+          <img src={`../assets/svg/${icon}.svg`} alt={icon}></img>
         </Box>
       )}
       <Box px={['4', '0', '0', '0', '0']} mx='auto'>
@@ -47,7 +43,7 @@ export function FeaturesItem({
           {subtitle}
         </Text>
         <ChakraHeading
-          maxW='325px'
+          maxW='390px'
           fontSize={['2xl', '3xl', '3xl', '4xl']}
           color='gray'
           mb='2'
@@ -55,7 +51,7 @@ export function FeaturesItem({
           {title}
         </ChakraHeading>
         <Text
-          maxW='300px'
+          maxW='325px'
           fontSize={['sm', 'sm', 'sm', 'md']}
           color='text'
           px={['2', '0', '0', '0']}
@@ -63,11 +59,11 @@ export function FeaturesItem({
           {description}
         </Text>
       </Box>
-      {isRight && (
+      {isRight && isWideVersion && (
         <Box w={['220px', '400px', '300px', '440px']}>
-          <img src={`../assets/svg/${icon}.svg`} alt={title}></img>
+          <img src={`../assets/svg/${icon}.svg`} alt={icon}></img>
         </Box>
       )}
-    </Stack>
+    </>
   );
 }
